@@ -27,7 +27,7 @@ setup_twitter_oauth("FXTquJNbgDG2dH81XYVqNZFAb", # Consumer Key (API Key)
 
 ## userTimeline has a restriction that it will get you not more 1500 tweets 
 ## includeRts = T means it is also going to include re-tweets from the user apart from his own tweets
-Tweets <- userTimeline('Elonv Musk', n = 1500,includeRts = T)
+Tweets <- userTimeline('Elon Musk', n = 1500,includeRts = T)
 TweetsDF <- twListToDF(Tweets)
 dim(TweetsDF)
 View(TweetsDF)
