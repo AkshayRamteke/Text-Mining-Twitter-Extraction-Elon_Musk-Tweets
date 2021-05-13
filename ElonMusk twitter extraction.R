@@ -27,12 +27,12 @@ setup_twitter_oauth("FXTquJNbgDG2dH81XYVqNZFAb", # Consumer Key (API Key)
 
 ## userTimeline has a restriction that it will get you not more 1500 tweets 
 ## includeRts = T means it is also going to include re-tweets from the user apart from his own tweets
-Tweets <- userTimeline('dpatil', n = 1500,includeRts = T)
+Tweets <- userTimeline('Elonv Musk', n = 1500,includeRts = T)
 TweetsDF <- twListToDF(Tweets)
 dim(TweetsDF)
 View(TweetsDF)
 
-write.csv(TweetsDF, "djpatilTweets.csv",row.names = F)
+write.csv(TweetsDF, "Elon_musk.csv",row.names = F)
 
 getwd()
 
@@ -158,7 +158,7 @@ stopwdrds = readLines(file.choose())
 
 
 # Loading the text file to be analysed 
-x = readLines(file.choose()) 	# first, read-in data from "amazon nokia lumia reviews.txt"
+x = readLines(file.choose()) 	# first, read-in data from "Elon_musk.csv"
 
 x <- stemDocument(x)
 
